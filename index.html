@@ -2,13 +2,8 @@
 <html lang="pt-BR">
 
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<meta name="theme-color" content="#f5f7fb">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Contrato de Compra e Venda | Diamond Connect</title>
 
@@ -21,498 +16,344 @@ content="width=device-width, initial-scale=1.0">
 }
 
 body{
-
-    font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    Arial,
-    sans-serif;
-
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     background:#eef1f5;
-
     color:#20242a;
-
     padding:12px;
 }
 
-
-/* CONTAINER */
-
 .container{
-
     width:100%;
-
     max-width:480px;
-
     margin:0 auto;
-
-    background:#ffffff;
-
+    background:#fff;
     border-radius:18px;
-
     overflow:hidden;
-
-    box-shadow:
-    0 8px 30px rgba(0,0,0,.10);
+    box-shadow:0 8px 30px rgba(0,0,0,.10);
 }
 
-
-/* CABEÇALHO */
-
 .header{
-
-    background:#ffffff;
-
+    background:#fff;
     padding:22px 18px 18px;
-
-    text-align:center;
-
+        text-align:center;
     border-bottom:1px solid #e5e7eb;
 }
 
 .logo{
-
     width:68px;
-
     height:68px;
-
     object-fit:contain;
-
     border-radius:50%;
-
     margin-bottom:8px;
 }
 
 .header h1{
-
     font-size:21px;
-
     font-weight:800;
-
     color:#111827;
 }
 
 .header h1 span{
-
     color:#0879e8;
 }
 
 .header p{
-
     margin-top:5px;
-
     font-size:10px;
-
     color:#737b86;
-
     letter-spacing:.5px;
 }
 
-
-/* TÍTULO */
-
 .title{
-
     padding:20px 18px 10px;
-
     text-align:center;
 }
 
 .title h2{
-
     font-size:20px;
-
     color:#111827;
-
     margin-bottom:5px;
 }
 
 .title p{
-
     font-size:11px;
-
     color:#737b86;
-
     line-height:1.6;
 }
 
-
-/* SEÇÕES */
-
 .section{
-
     margin:12px;
-
     padding:16px;
-
     background:#f8fafc;
-
     border:1px solid #e3e7ed;
-
     border-radius:14px;
 }
 
 .section-title{
-
     display:flex;
-
     align-items:center;
-
     gap:9px;
-
     margin-bottom:13px;
-
     color:#0879e8;
-
     font-size:14px;
-
     font-weight:800;
 }
 
 .section-title .icon{
-
     width:28px;
-
     height:28px;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
-
     background:#e8f3ff;
-
     border-radius:8px;
-
     font-size:14px;
 }
 
-
-/* DADOS */
-
 .info{
-
     margin-bottom:10px;
-
     padding-bottom:9px;
-
     border-bottom:1px solid #e8ebef;
 }
 
 .info:last-child{
-
     margin-bottom:0;
-
     padding-bottom:0;
-
     border-bottom:none;
 }
 
 .info-label{
-
     display:block;
-
     font-size:9px;
-
     color:#7b8490;
-
-    margin-bottom:2px;
-
+    margin-bottom:4px;
     text-transform:uppercase;
-
     letter-spacing:.4px;
 }
 
-.info-value{
-
-    font-size:12px;
-
-    font-weight:600;
-
+input,
+select,
+textarea{
+    width:100%;
+    padding:11px;
+    border:1px solid #d7dce3;
+    border-radius:9px;
+    background:#fff;
     color:#20242a;
-
-    min-height:16px;
+    font-size:12px;
+    outline:none;
 }
 
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#0879e8;
+    box-shadow:0 0 0 2px rgba(8,121,232,.10);
+}
 
-/* TABELA */
+textarea{
+    min-height:70px;
+    resize:vertical;
+}
 
 .table{
-
     width:100%;
-
     border-collapse:collapse;
-
     font-size:11px;
 }
 
 .table td{
-
     padding:9px 4px;
-
     border-bottom:1px solid #e5e7eb;
-
-    vertical-align:top;
+    vertical-align:middle;
 }
 
 .table td:first-child{
-
     color:#737b86;
-
     width:48%;
 }
 
-.table td:last-child{
-
-    text-align:right;
-
-    font-weight:700;
-
-    color:#20242a;
-}
-
 .table tr:last-child td{
-
     border-bottom:none;
 }
 
-
-/* DESTAQUE */
-
 .total{
-
     margin-top:12px;
-
     padding:14px;
-
     border-radius:12px;
-
     background:#0879e8;
-
-    color:#ffffff;
-
+    color:#fff;
     text-align:center;
 }
 
 .total small{
-
     display:block;
-
     font-size:9px;
-
     opacity:.85;
-
-    margin-bottom:3px;
+    margin-bottom:5px;
 }
 
-.total strong{
-
-    font-size:21px;
+.total input{
+    text-align:center;
+    font-size:19px;
+    font-weight:800;
+    color:#111827;
 }
-
-
-/* PARCELAMENTO */
 
 .installment{
-
     margin-top:10px;
-
     padding:12px;
-
-    background:#ffffff;
-
+    background:#fff;
     border:1px solid #e1e5ea;
-
     border-radius:11px;
-
     text-align:center;
 }
 
 .installment strong{
-
     display:block;
-
     font-size:17px;
-
     color:#0879e8;
 }
 
 .installment span{
-
     font-size:9px;
-
     color:#737b86;
 }
 
-
-/* TERMOS */
-
 .terms{
-
-    margin:12px;
-
-    padding:17px;
-
-    background:#fff;
-
-    border:1px solid #e1e5ea;
-
-    border-radius:14px;
+    padding:0;
 }
 
 .terms p{
-
     font-size:10px;
-
     line-height:1.7;
-
     color:#555e68;
-
     margin-bottom:10px;
 }
 
 .terms p:last-child{
-
     margin-bottom:0;
 }
 
-
-/* AVISO */
-
 .notice{
-
     margin:12px;
-
     padding:14px;
-
     border-radius:12px;
-
     background:#fff8e6;
-
     border:1px solid #f2dfaa;
-
     color:#695526;
-
     font-size:10px;
-
     line-height:1.6;
 }
 
+.accept{
+    margin:12px;
+    padding:15px;
+    background:#fff;
+    border:1px solid #e1e5ea;
+    border-radius:14px;
+}
 
-/* ASSINATURAS */
+.accept label{
+    display:flex;
+    align-items:flex-start;
+    gap:9px;
+    font-size:10px;
+    line-height:1.5;
+    color:#555e68;
+}
+
+.accept input{
+    width:auto;
+    margin-top:2px;
+}
+
+.button{
+    width:calc(100% - 24px);
+    margin:12px;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#0879e8,#35a0ff);
+    color:#fff;
+    font-size:13px;
+    font-weight:800;
+    cursor:pointer;
+}
+
+.button:active{
+    transform:scale(.98);
+}
 
 .signatures{
-
     margin:12px;
-
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     gap:10px;
 }
 
 .signature{
-
     min-height:90px;
-
     padding:12px 5px;
-
-    background:#ffffff;
-
+    background:#fff;
     border:1px solid #e1e5ea;
-
     border-radius:12px;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:flex-end;
-
     text-align:center;
 }
 
 .signature-line{
-
     border-top:1px solid #555;
-
     margin-bottom:7px;
 }
 
 .signature strong{
-
     font-size:10px;
 }
 
 .signature span{
-
     font-size:8px;
-
     color:#777;
 }
 
-
-/* RODAPÉ */
-
 .footer{
-
     padding:18px 15px 22px;
-
     text-align:center;
-
     color:#89919b;
-
     font-size:8px;
-
     line-height:1.7;
-
     border-top:1px solid #e5e7eb;
 }
 
 .footer strong{
-
     display:block;
-
     color:#4f5964;
-
     font-size:10px;
-
     margin-bottom:2px;
 }
-
-
-/* CELULAR PEQUENO */
 
 @media(max-width:360px){
 
     body{
-
         padding:7px;
     }
 
     .header{
-
         padding:18px 14px;
     }
 
     .section{
-
         margin:9px;
-
         padding:13px;
     }
 
     .signatures{
-
         margin:9px;
     }
 
     .title h2{
-
         font-size:18px;
     }
 
@@ -522,14 +363,9 @@ body{
 
 </head>
 
-
 <body>
 
-
 <div class="container">
-
-
-<!-- CABEÇALHO -->
 
 <header class="header">
 
@@ -548,9 +384,6 @@ body{
 
 </header>
 
-
-<!-- TÍTULO -->
-
 <div class="title">
 
     <h2>
@@ -558,379 +391,265 @@ body{
     </h2>
 
     <p>
-        Documento de formalização da compra
-        e das condições acordadas entre as partes.
+        Preencha os dados abaixo para formalização
+        da compra e das condições acordadas.
     </p>
 
 </div>
 
-
-<!-- VENDEDOR -->
-
 <section class="section">
 
     <div class="section-title">
-
         <div class="icon">🏢</div>
-
         DADOS DO VENDEDOR
-
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            Empresa
-        </span>
-
-        <div class="info-value">
-            Diamond Connect
-        </div>
-
+        <span class="info-label">Empresa</span>
+        <div class="info-value">Diamond Connect</div>
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            CNPJ
-        </span>
-
-        <div class="info-value">
-            45.145.228/0001-08
-        </div>
-
+        <span class="info-label">CNPJ</span>
+        <div class="info-value">45.145.228/0001-08</div>
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            Localização
-        </span>
-
-        <div class="info-value">
-            São Paulo - SP
-        </div>
-
+        <span class="info-label">Localização</span>
+        <div class="info-value">São Paulo - SP</div>
     </div>
 
 </section>
 
-
-<!-- COMPRADOR -->
-
 <section class="section">
 
     <div class="section-title">
-
         <div class="icon">👤</div>
-
         DADOS DO COMPRADOR
-
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            Nome completo
-        </span>
-
-        <div class="info-value">
-            __________________________________
-        </div>
-
+        <span class="info-label">Nome completo</span>
+        <input id="nome" type="text" placeholder="Digite seu nome completo">
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            CPF
-        </span>
-
-        <div class="info-value">
-            __________________________________
-        </div>
-
+        <span class="info-label">CPF</span>
+        <input id="cpf" type="text" placeholder="000.000.000-00" maxlength="14">
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            Data de nascimento
-        </span>
-
-        <div class="info-value">
-            ____ / ____ / ______
-        </div>
-
+        <span class="info-label">Data de nascimento</span>
+        <input id="nascimento" type="date">
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            Telefone / WhatsApp
-        </span>
-
-        <div class="info-value">
-            __________________________________
-        </div>
-
+        <span class="info-label">Telefone / WhatsApp</span>
+        <input id="telefone" type="tel" placeholder="(00) 00000-0000" maxlength="15">
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            E-mail
-        </span>
-
-        <div class="info-value">
-            __________________________________
-        </div>
-
+        <span class="info-label">E-mail</span>
+        <input id="email" type="email" placeholder="seuemail@gmail.com">
     </div>
 
 </section>
 
-
-<!-- PRODUTO -->
-
 <section class="section">
 
     <div class="section-title">
-
         <div class="icon">📱</div>
-
         PRODUTO DA COMPRA
-
     </div>
-
 
     <div class="info">
 
-        <span class="info-label">
-            Produto / Aparelho
-        </span>
+        <span class="info-label">Produto / Aparelho</span>
 
-        <div class="info-value">
-            __________________________________
-        </div>
+        <select id="produto">
+
+            <option value="">Selecione o produto</option>
+
+            <option>iPhone 11 Pro Max 256GB</option>
+            <option>iPhone 12 Pro Max 256GB</option>
+            <option>iPhone 13 256GB</option>
+            <option>iPhone 13 Pro Max 256GB</option>
+            <option>iPhone 14 256GB</option>
+            <option>iPhone 14 Pro 256GB</option>
+            <option>iPhone 14 Pro Max 256GB</option>
+            <option>iPhone 15 256GB</option>
+            <option>iPhone 15 Plus 256GB</option>
+            <option>iPhone 15 Pro 256GB</option>
+            <option>iPhone 15 Pro Max 256GB</option>
+            <option>iPhone 16 256GB</option>
+            <option>iPhone 16 Pro 256GB</option>
+            <option>iPhone 16 Pro Max 256GB</option>
+            <option>iPhone 17 256GB</option>
+            <option>iPhone 17 Air 256GB</option>
+            <option>iPhone 17 Pro 256GB</option>
+            <option>iPhone 17 Pro Max 256GB</option>
+            <option>PlayStation 5 Slim 1TB</option>
+            <option>Xbox Series X</option>
+
+        </select>
 
     </div>
 
-
     <div class="info">
 
-        <span class="info-label">
-            Capacidade / Modelo
-        </span>
+        <span class="info-label">Capacidade / Modelo</span>
 
-        <div class="info-value">
-            __________________________________
-        </div>
+        <input
+            id="modelo"
+            type="text"
+            placeholder="Ex.: 256GB">
 
     </div>
 
-
     <div class="info">
 
-        <span class="info-label">
-            Estado do produto
-        </span>
+        <span class="info-label">Estado do produto</span>
 
-        <div class="info-value">
-            Novo
-        </div>
+        <select id="estadoProduto">
+            <option>Novo</option>
+            <option>Seminovo</option>
+        </select>
 
     </div>
 
 </section>
 
-
-<!-- PAGAMENTO -->
-
 <section class="section">
 
     <div class="section-title">
-
         <div class="icon">💳</div>
-
         CONDIÇÕES DE PAGAMENTO
-
     </div>
-
 
     <table class="table">
 
         <tr>
-
+            <td>Valor da entrada</td>
             <td>
-                Valor da entrada
+                <input id="entrada" type="text" placeholder="R$ 0,00">
             </td>
-
-            <td>
-                R$ __________
-            </td>
-
         </tr>
 
-
         <tr>
-
+            <td>Número de parcelas</td>
             <td>
-                Número de parcelas
+                <select id="parcelas">
+                    <option>1x</option>
+                    <option>2x</option>
+                    <option>3x</option>
+                    <option>4x</option>
+                    <option>5x</option>
+                    <option>6x</option>
+                    <option>8x</option>
+                    <option>10x</option>
+                    <option>12x</option>
+                    <option selected>16x</option>
+                    <option>18x</option>
+                    <option>20x</option>
+                    <option>24x</option>
+                </select>
             </td>
-
-            <td>
-                16x
-            </td>
-
         </tr>
 
-
         <tr>
-
+            <td>Valor de cada parcela</td>
             <td>
-                Valor de cada parcela
+                <input id="valorParcela" type="text" placeholder="R$ 0,00">
             </td>
-
-            <td>
-                R$ __________
-            </td>
-
         </tr>
 
-
         <tr>
-
+            <td>Dia de vencimento</td>
             <td>
-                Dia de vencimento
+                <select id="vencimento">
+                    <option value="">Selecione</option>
+                    <option>Dia 5</option>
+                    <option>Dia 10</option>
+                    <option>Dia 15</option>
+                    <option>Dia 20</option>
+                    <option>Dia 25</option>
+                    <option>Dia 30</option>
+                </select>
             </td>
-
-            <td>
-                Dia ______
-            </td>
-
         </tr>
 
     </table>
 
-
     <div class="total">
 
-        <small>
-            VALOR TOTAL DA COMPRA
-        </small>
+        <small>VALOR TOTAL DA COMPRA</small>
 
-        <strong>
-            R$ __________
-        </strong>
+        <input
+            id="valorTotal"
+            type="text"
+            placeholder="R$ 0,00">
 
     </div>
-
 
     <div class="installment">
 
-        <strong>
-            16 parcelas
-        </strong>
+        <strong>Condições acordadas</strong>
 
         <span>
-            Conforme condições acordadas entre as partes
+            Conforme valores e vencimentos informados acima
         </span>
 
     </div>
 
 </section>
 
-
-<!-- ENDEREÇO -->
-
 <section class="section">
 
     <div class="section-title">
-
         <div class="icon">📍</div>
-
         ENDEREÇO DE ENTREGA
-
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            CEP
-        </span>
-
-        <div class="info-value">
-            ______________________________
-        </div>
-
+        <span class="info-label">CEP</span>
+        <input id="cep" type="text" placeholder="00000-000" maxlength="9">
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            Endereço
-        </span>
-
-        <div class="info-value">
-            ______________________________
-        </div>
-
+        <span class="info-label">Endereço</span>
+        <input id="endereco" type="text" placeholder="Rua / Avenida">
     </div>
 
-
     <div class="info">
-
-        <span class="info-label">
-            Número / Complemento
-        </span>
-
-        <div class="info-value">
-            ______________________________
-        </div>
-
+        <span class="info-label">Número / Complemento</span>
+        <input id="numero" type="text" placeholder="Número e complemento">
     </div>
 
+    <div class="info">
+        <span class="info-label">Bairro</span>
+        <input id="bairro" type="text" placeholder="Bairro">
+    </div>
 
     <div class="info">
+        <span class="info-label">Cidade</span>
+        <input id="cidade" type="text" placeholder="Cidade">
+    </div>
 
-        <span class="info-label">
-            Bairro / Cidade / Estado
-        </span>
-
-        <div class="info-value">
-            ______________________________
-        </div>
-
+    <div class="info">
+        <span class="info-label">Estado</span>
+        <input id="estado" type="text" placeholder="UF" maxlength="2">
     </div>
 
 </section>
 
-
-<!-- TERMOS -->
-
 <section class="section">
 
     <div class="section-title">
-
         <div class="icon">📄</div>
-
         TERMOS E CONDIÇÕES
-
     </div>
 
-
-    <div class="terms" style="margin:0; padding:0; border:0;">
+    <div class="terms">
 
         <p>
             1. O presente documento formaliza a compra e venda
@@ -963,22 +682,30 @@ body{
 
 </section>
 
+<section class="section">
 
-<!-- AVISO -->
+    <div class="section-title">
+               <div class="icon">📅</div>
+        DATA DA CONTRATAÇÃO
+    </div>
 
-<div class="notice">
+    <div class="info">
 
-    ⚠️ <strong>Importante:</strong>
-    confira todos os seus dados, valores e condições
-    antes de assinar ou confirmar a contratação.
+        <span class="info-label">
+            Data
+        </span>
 
-</div>
+        <input
+            id="dataContrato"
+            type="date">
 
+    </div>
+
+</section>
 
 <!-- ASSINATURAS -->
 
 <div class="signatures">
-
 
     <div class="signature">
 
@@ -994,7 +721,6 @@ body{
 
     </div>
 
-
     <div class="signature">
 
         <div class="signature-line"></div>
@@ -1009,36 +735,7 @@ body{
 
     </div>
 
-
 </div>
-
-
-<!-- DATA -->
-
-<section class="section">
-
-    <div class="section-title">
-
-        <div class="icon">📅</div>
-
-        DATA DA CONTRATAÇÃO
-
-    </div>
-
-    <div class="info">
-
-        <span class="info-label">
-            Data
-        </span>
-
-        <div class="info-value">
-            ____ / ____ / ______
-        </div>
-
-    </div>
-
-</section>
-
 
 <!-- RODAPÉ -->
 
@@ -1060,10 +757,301 @@ body{
 
 </footer>
 
-
 </div>
 
+<script>
+
+/* CPF */
+
+document.getElementById("cpf").addEventListener("input", function(e){
+
+    let v = e.target.value.replace(/\D/g,"");
+
+    if(v.length > 11){
+        v = v.slice(0,11);
+    }
+
+    v = v.replace(/(\d{3})(\d)/,"$1.$2");
+    v = v.replace(/(\d{3})(\d)/,"$1.$2");
+    v = v.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
+
+    e.target.value = v;
+
+});
+
+
+/* TELEFONE */
+
+document.getElementById("telefone").addEventListener("input", function(e){
+
+    let v = e.target.value.replace(/\D/g,"");
+
+    if(v.length > 11){
+        v = v.slice(0,11);
+    }
+
+    if(v.length > 10){
+
+        v = v.replace(
+            /^(\d{2})(\d{5})(\d{4}).*/,
+            "($1) $2-$3"
+        );
+
+    }else if(v.length > 6){
+
+        v = v.replace(
+            /^(\d{2})(\d{4})(\d{0,4}).*/,
+            "($1) $2-$3"
+        );
+
+    }else if(v.length > 2){
+
+        v = v.replace(
+            /^(\d{2})(\d{0,5})/,
+            "($1) $2"
+        );
+
+    }
+
+    e.target.value = v;
+
+});
+
+
+/* CEP */
+
+document.getElementById("cep").addEventListener("input", function(e){
+
+    let v = e.target.value.replace(/\D/g,"");
+
+    if(v.length > 8){
+        v = v.slice(0,8);
+    }
+
+    if(v.length > 5){
+
+        v = v.replace(
+            /^(\d{5})(\d{1,3})$/,
+            "$1-$2"
+        );
+
+    }
+
+    e.target.value = v;
+
+});
+
+
+/* BUSCAR CEP */
+
+document.getElementById("cep").addEventListener("blur", function(){
+
+    let cep = this.value.replace(/\D/g,"");
+
+    if(cep.length !== 8){
+        return;
+    }
+
+    fetch("https://viacep.com.br/ws/" + cep + "/json/")
+
+    .then(function(response){
+        return response.json();
+    })
+
+    .then(function(data){
+
+        if(data.erro){
+            return;
+        }
+
+        document.getElementById("endereco").value =
+            data.logradouro || "";
+
+        document.getElementById("bairro").value =
+            data.bairro || "";
+
+        document.getElementById("cidade").value =
+            data.localidade || "";
+
+        document.getElementById("estado").value =
+            data.uf || "";
+
+    })
+
+    .catch(function(){
+
+        console.log("Não foi possível consultar o CEP.");
+
+    });
+
+});
+
+
+/* DATA AUTOMÁTICA */
+
+let hoje = new Date();
+
+document.getElementById("dataContrato").value =
+    hoje.getFullYear() + "-" +
+    String(hoje.getMonth() + 1).padStart(2,"0") + "-" +
+    String(hoje.getDate()).padStart(2,"0");
+
+
+/* ENVIO PARA WHATSAPP */
+
+function enviarContrato(){
+
+    let nome =
+        document.getElementById("nome").value.trim();
+
+    let cpf =
+        document.getElementById("cpf").value.trim();
+
+    let nascimento =
+        document.getElementById("nascimento").value;
+
+    let telefone =
+        document.getElementById("telefone").value.trim();
+
+    let email =
+        document.getElementById("email").value.trim();
+
+    let produto =
+        document.getElementById("produto").value;
+
+    let modelo =
+        document.getElementById("modelo").value.trim();
+
+    let estadoProduto =
+        document.getElementById("estadoProduto").value;
+
+    let entrada =
+        document.getElementById("entrada").value.trim();
+
+    let parcelas =
+        document.getElementById("parcelas").value;
+
+    let valorParcela =
+        document.getElementById("valorParcela").value.trim();
+
+    let vencimento =
+        document.getElementById("vencimento").value;
+
+    let valorTotal =
+        document.getElementById("valorTotal").value.trim();
+
+    let cep =
+        document.getElementById("cep").value.trim();
+
+    let endereco =
+        document.getElementById("endereco").value.trim();
+
+    let numero =
+        document.getElementById("numero").value.trim();
+
+        let bairro =
+        document.getElementById("bairro").value.trim();
+
+    let cidade =
+        document.getElementById("cidade").value.trim();
+
+    let estado =
+        document.getElementById("estado").value.trim();
+
+    let observacoes =
+        document.getElementById("observacoes").value.trim();
+
+    let aceite =
+        document.getElementById("aceite").checked;
+
+    let dataContrato =
+        document.getElementById("dataContrato").value;
+
+
+    if(!nome || !cpf || !telefone || !produto){
+
+        alert("Preencha os campos obrigatórios.");
+
+        return;
+    }
+
+    if(cpf.length < 14){
+
+        alert("Digite um CPF completo.");
+
+        return;
+    }
+
+    if(!aceite){
+
+        alert("Você precisa ler e aceitar os termos.");
+
+        return;
+    }
+
+
+    let mensagem =
+
+        "📄 CONTRATO DE COMPRA E VENDA\n" +
+        "Diamond Connect\n\n" +
+
+        "🏢 DADOS DO VENDEDOR\n" +
+        "Empresa: Diamond Connect\n" +
+        "CNPJ: 45.145.228/0001-08\n" +
+        "Localização: São Paulo - SP\n\n" +
+
+        "👤 DADOS DO COMPRADOR\n" +
+        "Nome: " + nome + "\n" +
+        "CPF: " + cpf + "\n" +
+        "Nascimento: " + nascimento + "\n" +
+        "Telefone: " + telefone + "\n" +
+        "E-mail: " + email + "\n\n" +
+
+        "📱 PRODUTO\n" +
+        "Produto: " + produto + "\n" +
+        "Modelo/Capacidade: " + modelo + "\n" +
+        "Estado: " + estadoProduto + "\n\n" +
+
+        "💳 PAGAMENTO\n" +
+        "Entrada: " + entrada + "\n" +
+        "Parcelas: " + parcelas + "\n" +
+        "Valor da parcela: " + valorParcela + "\n" +
+        "Vencimento: " + vencimento + "\n" +
+        "Valor total: " + valorTotal + "\n\n" +
+
+        "📍 ENDEREÇO DE ENTREGA\n" +
+        "CEP: " + cep + "\n" +
+        "Endereço: " + endereco + "\n" +
+        "Número/Complemento: " + numero + "\n" +
+        "Bairro: " + bairro + "\n" +
+        "Cidade: " + cidade + "\n" +
+        "Estado: " + estado + "\n\n" +
+
+        "📝 OBSERVAÇÕES\n" +
+        (observacoes || "Nenhuma") + "\n\n" +
+
+        "📅 DATA DA CONTRATAÇÃO\n" +
+        dataContrato + "\n\n" +
+
+        "✅ Cliente declarou ter lido e aceitado os termos.";
+
+
+    let numeroWhatsApp =
+        "5511967430104";
+
+    let url =
+        "https://wa.me/" +
+        numeroWhatsApp +
+        "?text=" +
+        encodeURIComponent(mensagem);
+
+
+    window.location.href = url;
+
+}
+
+</script>
 
 </body>
 
-  </html>
+</html>
