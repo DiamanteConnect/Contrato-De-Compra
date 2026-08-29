@@ -869,20 +869,6 @@ function enviarContrato(){
     let estadoProduto =
         document.getElementById("estadoProduto").value;
 
-    let entrada =
-        document.getElementById("entrada").value.trim();
-
-    let parcelas =
-        document.getElementById("parcelas").value;
-
-    let valorParcela =
-        document.getElementById("valorParcela").value.trim();
-
-    let vencimento =
-        document.getElementById("vencimento").value;
-
-    let valorTotal =
-        document.getElementById("valorTotal").value.trim();
 
     let cep =
         document.getElementById("cep").value.trim();
@@ -954,13 +940,6 @@ function enviarContrato(){
         "Produto: " + produto + "\n" +
         "Modelo/Capacidade: " + modelo + "\n" +
         "Estado: " + estadoProduto + "\n\n" +
-
-        "💳 PAGAMENTO\n" +
-        "Entrada: " + entrada + "\n" +
-        "Parcelas: " + parcelas + "\n" +
-        "Valor da parcela: " + valorParcela + "\n" +
-        "Vencimento: " + vencimento + "\n" +
-        "Valor total: " + valorTotal + "\n\n" +
 
         "📍 ENDEREÇO DE ENTREGA\n" +
         "CEP: " + cep + "\n" +
