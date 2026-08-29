@@ -2,8 +2,12 @@
 <html lang="pt-BR">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#f5f7fb">
 
 <title>Contrato de Compra e Venda | Diamond Connect</title>
 
@@ -35,7 +39,7 @@ body{
 .header{
     background:#fff;
     padding:22px 18px 18px;
-        text-align:center;
+    text-align:center;
     border-bottom:1px solid #e5e7eb;
 }
 
@@ -131,6 +135,12 @@ body{
     letter-spacing:.4px;
 }
 
+.info-value{
+    font-size:12px;
+    font-weight:600;
+    color:#20242a;
+}
+
 input,
 select,
 textarea{
@@ -152,72 +162,8 @@ textarea:focus{
 }
 
 textarea{
-    min-height:70px;
+    min-height:80px;
     resize:vertical;
-}
-
-.table{
-    width:100%;
-    border-collapse:collapse;
-    font-size:11px;
-}
-
-.table td{
-    padding:9px 4px;
-    border-bottom:1px solid #e5e7eb;
-    vertical-align:middle;
-}
-
-.table td:first-child{
-    color:#737b86;
-    width:48%;
-}
-
-.table tr:last-child td{
-    border-bottom:none;
-}
-
-.total{
-    margin-top:12px;
-    padding:14px;
-    border-radius:12px;
-    background:#0879e8;
-    color:#fff;
-    text-align:center;
-}
-
-.total small{
-    display:block;
-    font-size:9px;
-    opacity:.85;
-    margin-bottom:5px;
-}
-
-.total input{
-    text-align:center;
-    font-size:19px;
-    font-weight:800;
-    color:#111827;
-}
-
-.installment{
-    margin-top:10px;
-    padding:12px;
-    background:#fff;
-    border:1px solid #e1e5ea;
-    border-radius:11px;
-    text-align:center;
-}
-
-.installment strong{
-    display:block;
-    font-size:17px;
-    color:#0879e8;
-}
-
-.installment span{
-    font-size:9px;
-    color:#737b86;
 }
 
 .terms{
@@ -266,6 +212,7 @@ textarea{
 .accept input{
     width:auto;
     margin-top:2px;
+    flex-shrink:0;
 }
 
 .button{
@@ -384,6 +331,7 @@ textarea{
 
 </header>
 
+
 <div class="title">
 
     <h2>
@@ -397,6 +345,9 @@ textarea{
 
 </div>
 
+
+<!-- VENDEDOR -->
+
 <section class="section">
 
     <div class="section-title">
@@ -405,21 +356,45 @@ textarea{
     </div>
 
     <div class="info">
-        <span class="info-label">Empresa</span>
-        <div class="info-value">Diamond Connect</div>
+
+        <span class="info-label">
+            Empresa
+        </span>
+
+        <div class="info-value">
+            Diamond Connect
+        </div>
+
     </div>
 
     <div class="info">
-        <span class="info-label">CNPJ</span>
-        <div class="info-value">45.145.228/0001-08</div>
+
+        <span class="info-label">
+            CNPJ
+        </span>
+
+        <div class="info-value">
+            45.145.228/0001-08
+        </div>
+
     </div>
 
     <div class="info">
-        <span class="info-label">Localização</span>
-        <div class="info-value">São Paulo - SP</div>
+
+        <span class="info-label">
+            Localização
+        </span>
+
+        <div class="info-value">
+            São Paulo - SP
+        </div>
+
     </div>
 
 </section>
+
+
+<!-- COMPRADOR -->
 
 <section class="section">
 
@@ -429,31 +404,75 @@ textarea{
     </div>
 
     <div class="info">
-        <span class="info-label">Nome completo</span>
-        <input id="nome" type="text" placeholder="Digite seu nome completo">
+
+        <span class="info-label">
+            Nome completo
+        </span>
+
+        <input
+            id="nome"
+            type="text"
+            placeholder="Digite seu nome completo">
+
     </div>
 
     <div class="info">
-        <span class="info-label">CPF</span>
-        <input id="cpf" type="text" placeholder="000.000.000-00" maxlength="14">
+
+        <span class="info-label">
+            CPF
+        </span>
+
+        <input
+            id="cpf"
+            type="text"
+            placeholder="000.000.000-00"
+            maxlength="14">
+
     </div>
 
     <div class="info">
-        <span class="info-label">Data de nascimento</span>
-        <input id="nascimento" type="date">
+
+        <span class="info-label">
+            Data de nascimento
+        </span>
+
+        <input
+            id="nascimento"
+            type="date">
+
     </div>
 
     <div class="info">
-        <span class="info-label">Telefone / WhatsApp</span>
-        <input id="telefone" type="tel" placeholder="(00) 00000-0000" maxlength="15">
+
+        <span class="info-label">
+            Telefone / WhatsApp
+        </span>
+
+        <input
+            id="telefone"
+            type="tel"
+            placeholder="(00) 00000-0000"
+            maxlength="15">
+
     </div>
 
     <div class="info">
-        <span class="info-label">E-mail</span>
-        <input id="email" type="email" placeholder="seuemail@gmail.com">
+
+        <span class="info-label">
+            E-mail
+        </span>
+
+        <input
+            id="email"
+            type="email"
+            placeholder="seuemail@gmail.com">
+
     </div>
 
 </section>
+
+
+<!-- PRODUTO -->
 
 <section class="section">
 
@@ -464,11 +483,15 @@ textarea{
 
     <div class="info">
 
-        <span class="info-label">Produto / Aparelho</span>
+        <span class="info-label">
+            Produto / Aparelho
+        </span>
 
         <select id="produto">
 
-            <option value="">Selecione o produto</option>
+            <option value="">
+                Selecione o produto
+            </option>
 
             <option>iPhone 11 Pro Max 256GB</option>
             <option>iPhone 12 Pro Max 256GB</option>
@@ -497,7 +520,9 @@ textarea{
 
     <div class="info">
 
-        <span class="info-label">Capacidade / Modelo</span>
+        <span class="info-label">
+            Modelo / Capacidade
+        </span>
 
         <input
             id="modelo"
@@ -508,100 +533,23 @@ textarea{
 
     <div class="info">
 
-        <span class="info-label">Estado do produto</span>
+        <span class="info-label">
+            Estado do produto
+        </span>
 
         <select id="estadoProduto">
+
             <option>Novo</option>
             <option>Seminovo</option>
+
         </select>
 
     </div>
 
 </section>
 
-<section class="section">
 
-    <div class="section-title">
-        <div class="icon">💳</div>
-        CONDIÇÕES DE PAGAMENTO
-    </div>
-
-    <table class="table">
-
-        <tr>
-            <td>Valor da entrada</td>
-            <td>
-                <input id="entrada" type="text" placeholder="R$ 0,00">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Número de parcelas</td>
-            <td>
-                <select id="parcelas">
-                    <option>1x</option>
-                    <option>2x</option>
-                    <option>3x</option>
-                    <option>4x</option>
-                    <option>5x</option>
-                    <option>6x</option>
-                    <option>8x</option>
-                    <option>10x</option>
-                    <option>12x</option>
-                    <option selected>16x</option>
-                    <option>18x</option>
-                    <option>20x</option>
-                    <option>24x</option>
-                </select>
-            </td>
-        </tr>
-
-        <tr>
-            <td>Valor de cada parcela</td>
-            <td>
-                <input id="valorParcela" type="text" placeholder="R$ 0,00">
-            </td>
-        </tr>
-
-        <tr>
-            <td>Dia de vencimento</td>
-            <td>
-                <select id="vencimento">
-                    <option value="">Selecione</option>
-                    <option>Dia 5</option>
-                    <option>Dia 10</option>
-                    <option>Dia 15</option>
-                    <option>Dia 20</option>
-                    <option>Dia 25</option>
-                    <option>Dia 30</option>
-                </select>
-            </td>
-        </tr>
-
-    </table>
-
-    <div class="total">
-
-        <small>VALOR TOTAL DA COMPRA</small>
-
-        <input
-            id="valorTotal"
-            type="text"
-            placeholder="R$ 0,00">
-
-    </div>
-
-    <div class="installment">
-
-        <strong>Condições acordadas</strong>
-
-        <span>
-            Conforme valores e vencimentos informados acima
-        </span>
-
-    </div>
-
-</section>
+<!-- ENDEREÇO -->
 
 <section class="section">
 
@@ -611,36 +559,89 @@ textarea{
     </div>
 
     <div class="info">
-        <span class="info-label">CEP</span>
-        <input id="cep" type="text" placeholder="00000-000" maxlength="9">
+
+        <span class="info-label">
+            CEP
+        </span>
+
+        <input
+            id="cep"
+            type="text"
+            placeholder="00000-000"
+            maxlength="9">
+
     </div>
 
     <div class="info">
-        <span class="info-label">Endereço</span>
-        <input id="endereco" type="text" placeholder="Rua / Avenida">
+
+        <span class="info-label">
+            Endereço
+        </span>
+
+        <input
+            id="endereco"
+            type="text"
+            placeholder="Rua / Avenida">
+
     </div>
 
     <div class="info">
-        <span class="info-label">Número / Complemento</span>
-        <input id="numero" type="text" placeholder="Número e complemento">
+
+        <span class="info-label">
+            Número / Complemento
+        </span>
+
+        <input
+            id="numero"
+            type="text"
+            placeholder="Número e complemento">
+
     </div>
 
     <div class="info">
-        <span class="info-label">Bairro</span>
-        <input id="bairro" type="text" placeholder="Bairro">
+
+        <span class="info-label">
+            Bairro
+        </span>
+
+        <input
+            id="bairro"
+            type="text"
+            placeholder="Bairro">
+
     </div>
 
     <div class="info">
-        <span class="info-label">Cidade</span>
-        <input id="cidade" type="text" placeholder="Cidade">
+
+        <span class="info-label">
+            Cidade
+        </span>
+
+        <input
+            id="cidade"
+            type="text"
+            placeholder="Cidade">
+
     </div>
 
     <div class="info">
-        <span class="info-label">Estado</span>
-        <input id="estado" type="text" placeholder="UF" maxlength="2">
+
+        <span class="info-label">
+            Estado
+        </span>
+
+        <input
+            id="estado"
+            type="text"
+            placeholder="UF"
+            maxlength="2">
+
     </div>
 
 </section>
+
+
+<!-- TERMOS -->
 
 <section class="section">
 
@@ -659,13 +660,13 @@ textarea{
 
         <p>
             2. O comprador declara estar ciente das condições
-            de pagamento, valores, quantidade de parcelas e
-            respectivos vencimentos acordados.
+            da compra e do produto selecionado.
         </p>
 
         <p>
-            3. O comprador declara que as informações fornecidas
-            são verdadeiras e de sua responsabilidade.
+            3. O comprador declara que todas as informações
+            fornecidas neste formulário são verdadeiras e de
+            sua responsabilidade.
         </p>
 
         <p>
@@ -674,19 +675,50 @@ textarea{
         </p>
 
         <p>
-            5. O presente contrato deverá ser lido e conferido
-            antes da confirmação da compra.
+            5. O comprador declara ter lido e compreendido
+            integralmente os termos apresentados antes da
+            confirmação da contratação.
         </p>
 
     </div>
 
 </section>
 
+
+<!-- OBSERVAÇÕES -->
+
 <section class="section">
 
     <div class="section-title">
-               <div class="icon">📅</div>
+        <div class="icon">📝</div>
+        OBSERVAÇÕES
+    </div>
+
+    <div class="info">
+
+        <span class="info-label">
+            Informações adicionais
+        </span>
+
+        <textarea
+            id="observacoes"
+            placeholder="Digite alguma observação, se necessário..."></textarea>
+
+    </div>
+
+</section>
+
+
+<!-- DATA -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <div class="icon">📅</div>
+
         DATA DA CONTRATAÇÃO
+
     </div>
 
     <div class="info">
@@ -702,6 +734,51 @@ textarea{
     </div>
 
 </section>
+
+
+<!-- AVISO -->
+
+<div class="notice">
+
+    ⚠️ <strong>Importante:</strong>
+    confira todos os dados antes de finalizar
+    o contrato.
+
+</div>
+
+
+<!-- ACEITE -->
+
+<div class="accept">
+
+    <label>
+
+        <input
+            type="checkbox"
+            id="aceite">
+
+        <span>
+            Declaro que li e concordo com os termos e
+            condições apresentados neste contrato e que
+            as informações fornecidas são verdadeiras.
+        </span>
+
+    </label>
+
+</div>
+
+
+<!-- BOTÃO -->
+
+<button
+    type="button"
+    class="button"
+    onclick="enviarContrato()">
+
+    ✅ FINALIZAR CONTRATO E ENVIAR
+
+</button>
+
 
 <!-- ASSINATURAS -->
 
@@ -737,6 +814,40 @@ textarea{
 
 </div>
 
+
+<!-- ACEITE -->
+
+<div class="accept">
+
+    <label>
+
+        <input
+            type="checkbox"
+            id="aceite">
+
+        <span>
+            Declaro que li, conferi e estou de acordo
+            com todas as informações e termos deste
+            contrato de compra e venda.
+        </span>
+
+    </label>
+
+</div>
+
+
+<!-- BOTÃO -->
+
+<button
+    type="button"
+    class="button"
+    onclick="enviarContrato()">
+
+    ✅ FINALIZAR CONTRATO E ENVIAR
+
+</button>
+
+
 <!-- RODAPÉ -->
 
 <footer class="footer">
@@ -757,145 +868,11 @@ textarea{
 
 </footer>
 
+
 </div>
 
+
 <script>
-
-/* CPF */
-
-document.getElementById("cpf").addEventListener("input", function(e){
-
-    let v = e.target.value.replace(/\D/g,"");
-
-    if(v.length > 11){
-        v = v.slice(0,11);
-    }
-
-    v = v.replace(/(\d{3})(\d)/,"$1.$2");
-    v = v.replace(/(\d{3})(\d)/,"$1.$2");
-    v = v.replace(/(\d{3})(\d{1,2})$/,"$1-$2");
-
-    e.target.value = v;
-
-});
-
-
-/* TELEFONE */
-
-document.getElementById("telefone").addEventListener("input", function(e){
-
-    let v = e.target.value.replace(/\D/g,"");
-
-    if(v.length > 11){
-        v = v.slice(0,11);
-    }
-
-    if(v.length > 10){
-
-        v = v.replace(
-            /^(\d{2})(\d{5})(\d{4}).*/,
-            "($1) $2-$3"
-        );
-
-    }else if(v.length > 6){
-
-        v = v.replace(
-            /^(\d{2})(\d{4})(\d{0,4}).*/,
-            "($1) $2-$3"
-        );
-
-    }else if(v.length > 2){
-
-        v = v.replace(
-            /^(\d{2})(\d{0,5})/,
-            "($1) $2"
-        );
-
-    }
-
-    e.target.value = v;
-
-});
-
-
-/* CEP */
-
-document.getElementById("cep").addEventListener("input", function(e){
-
-    let v = e.target.value.replace(/\D/g,"");
-
-    if(v.length > 8){
-        v = v.slice(0,8);
-    }
-
-    if(v.length > 5){
-
-        v = v.replace(
-            /^(\d{5})(\d{1,3})$/,
-            "$1-$2"
-        );
-
-    }
-
-    e.target.value = v;
-
-});
-
-
-/* BUSCAR CEP */
-
-document.getElementById("cep").addEventListener("blur", function(){
-
-    let cep = this.value.replace(/\D/g,"");
-
-    if(cep.length !== 8){
-        return;
-    }
-
-    fetch("https://viacep.com.br/ws/" + cep + "/json/")
-
-    .then(function(response){
-        return response.json();
-    })
-
-    .then(function(data){
-
-        if(data.erro){
-            return;
-        }
-
-        document.getElementById("endereco").value =
-            data.logradouro || "";
-
-        document.getElementById("bairro").value =
-            data.bairro || "";
-
-        document.getElementById("cidade").value =
-            data.localidade || "";
-
-        document.getElementById("estado").value =
-            data.uf || "";
-
-    })
-
-    .catch(function(){
-
-        console.log("Não foi possível consultar o CEP.");
-
-    });
-
-});
-
-
-/* DATA AUTOMÁTICA */
-
-let hoje = new Date();
-
-document.getElementById("dataContrato").value =
-    hoje.getFullYear() + "-" +
-    String(hoje.getMonth() + 1).padStart(2,"0") + "-" +
-    String(hoje.getDate()).padStart(2,"0");
-
 
 /* ENVIO PARA WHATSAPP */
 
@@ -949,7 +926,7 @@ function enviarContrato(){
     let numero =
         document.getElementById("numero").value.trim();
 
-        let bairro =
+    let bairro =
         document.getElementById("bairro").value.trim();
 
     let cidade =
@@ -958,14 +935,11 @@ function enviarContrato(){
     let estado =
         document.getElementById("estado").value.trim();
 
-    let observacoes =
-        document.getElementById("observacoes").value.trim();
+    let dataContrato =
+        document.getElementById("dataContrato").value;
 
     let aceite =
         document.getElementById("aceite").checked;
-
-    let dataContrato =
-        document.getElementById("dataContrato").value;
 
 
     if(!nome || !cpf || !telefone || !produto){
@@ -975,12 +949,14 @@ function enviarContrato(){
         return;
     }
 
+
     if(cpf.length < 14){
 
         alert("Digite um CPF completo.");
 
         return;
     }
+
 
     if(!aceite){
 
@@ -1027,27 +1003,19 @@ function enviarContrato(){
         "Cidade: " + cidade + "\n" +
         "Estado: " + estado + "\n\n" +
 
-        "📝 OBSERVAÇÕES\n" +
-        (observacoes || "Nenhuma") + "\n\n" +
-
-    
-      "📅 DATA DA CONTRATAÇÃO\n" +
+        "📅 DATA DA CONTRATAÇÃO\n" +
         dataContrato + "\n\n" +
-        <div style="padding:12px;">
-    <button
-        type="button"
-        onclick="enviarContrato()"
-        style="width:100%;padding:16px;border:none;border-radius:12px;background:#0879e8;color:#fff;font-size:14px;font-weight:800;">
-        ✅ CONFIRMAR E ENVIAR CONTRATO
-    </button>
-</div>
-        
 
         "✅ Cliente declarou ter lido e aceitado os termos.";
 
 
-    let numeroWhatsApp =
-        "5511967430104";
+    /*
+     * WhatsApp da Diamond Connect
+     * Número: (11) 96743-0104
+     */
+
+    let numeroWhatsApp = "5511967430104";
+
 
     let url =
         "https://wa.me/" +
@@ -1064,4 +1032,4 @@ function enviarContrato(){
 
 </body>
 
-</html>
+    </html>
