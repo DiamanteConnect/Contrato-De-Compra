@@ -1030,8 +1030,18 @@ function enviarContrato(){
         "📝 OBSERVAÇÕES\n" +
         (observacoes || "Nenhuma") + "\n\n" +
 
-        "📅 DATA DA CONTRATAÇÃO\n" +
+    
+      "📅 DATA DA CONTRATAÇÃO\n" +
         dataContrato + "\n\n" +
+        <div style="padding:12px;">
+    <button
+        type="button"
+        onclick="enviarContrato()"
+        style="width:100%;padding:16px;border:none;border-radius:12px;background:#0879e8;color:#fff;font-size:14px;font-weight:800;">
+        ✅ CONFIRMAR E ENVIAR CONTRATO
+    </button>
+</div>
+        
 
         "✅ Cliente declarou ter lido e aceitado os termos.";
 
