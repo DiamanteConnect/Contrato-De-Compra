@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#f5f7fb">
+
+<title>Contrato de Compra e Venda | Diamond Connect</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+    background:#eef1f5;
+
+    color:#20242a;
+
+    padding:12px;
+}
+
+
+/* CONTAINER */
+
+.container{
+
+    width:100%;
+
+    max-width:480px;
+
+    margin:0 auto;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 8px 30px rgba(0,0,0,.10);
+}
+
+
+/* CABEÇALHO */
+
+.header{
+
+    background:#ffffff;
+
+    padding:22px 18px 18px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e5e7eb;
+}
+
+.logo{
+
+    width:68px;
+
+    height:68px;
+
+    object-fit:contain;
+
+    border-radius:50%;
+
+    margin-bottom:8px;
+}
+
+.header h1{
+
+    font-size:21px;
+
+    font-weight:800;
+
+    color:#111827;
+}
+
+.header h1 span{
+
+    color:#0879e8;
+}
+
+.header p{
+
+    margin-top:5px;
+
+    font-size:10px;
+
+    color:#737b86;
+
+    letter-spacing:.5px;
+}
+
+
+/* TÍTULO */
+
+.title{
+
+    padding:20px 18px 10px;
+
+    text-align:center;
+}
+
+.title h2{
+
+    font-size:20px;
+
+    color:#111827;
+
+    margin-bottom:5px;
+}
+
+.title p{
+
+    font-size:11px;
+
+    color:#737b86;
+
+    line-height:1.6;
+}
+
+
+/* SEÇÕES */
+
+.section{
+
+    margin:12px;
+
+    padding:16px;
+
+    background:#f8fafc;
+
+    border:1px solid #e3e7ed;
+
+    border-radius:14px;
+}
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    margin-bottom:13px;
+
+    color:#0879e8;
+
+    font-size:14px;
+
+    font-weight:800;
+}
+
+.section-title .icon{
+
+    width:28px;
+
+    height:28px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#e8f3ff;
+
+    border-radius:8px;
+
+    font-size:14px;
+}
+
+
+/* DADOS */
+
+.info{
+
+    margin-bottom:10px;
+
+    padding-bottom:9px;
+
+    border-bottom:1px solid #e8ebef;
+}
+
+.info:last-child{
+
+    margin-bottom:0;
+
+    padding-bottom:0;
+
+    border-bottom:none;
+}
+
+.info-label{
+
+    display:block;
+
+    font-size:9px;
+
+    color:#7b8490;
+
+    margin-bottom:2px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.4px;
+}
+
+.info-value{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#20242a;
+
+    min-height:16px;
+}
+
+
+/* TABELA */
+
+.table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    font-size:11px;
+}
+
+.table td{
+
+    padding:9px 4px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    vertical-align:top;
+}
+
+.table td:first-child{
+
+    color:#737b86;
+
+    width:48%;
+}
+
+.table td:last-child{
+
+    text-align:right;
+
+    font-weight:700;
+
+    color:#20242a;
+}
+
+.table tr:last-child td{
+
+    border-bottom:none;
+}
+
+
+/* DESTAQUE */
+
+.total{
+
+    margin-top:12px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#0879e8;
+
+    color:#ffffff;
+
+    text-align:center;
+}
+
+.total small{
+
+    display:block;
+
+    font-size:9px;
+
+    opacity:.85;
+
+    margin-bottom:3px;
+}
+
+.total strong{
+
+    font-size:21px;
+}
+
+
+/* PARCELAMENTO */
+
+.installment{
+
+    margin-top:10px;
+
+    padding:12px;
+
+    background:#ffffff;
+
+    border:1px solid #e1e5ea;
+
+    border-radius:11px;
+
+    text-align:center;
+}
+
+.installment strong{
+
+    display:block;
+
+    font-size:17px;
+
+    color:#0879e8;
+}
+
+.installment span{
+
+    font-size:9px;
+
+    color:#737b86;
+}
+
+
+/* TERMOS */
+
+.terms{
+
+    margin:12px;
+
+    padding:17px;
+
+    background:#fff;
+
+    border:1px solid #e1e5ea;
+
+    border-radius:14px;
+}
+
+.terms p{
+
+    font-size:10px;
+
+    line-height:1.7;
+
+    color:#555e68;
+
+    margin-bottom:10px;
+}
+
+.terms p:last-child{
+
+    margin-bottom:0;
+}
+
+
+/* AVISO */
+
+.notice{
+
+    margin:12px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#fff8e6;
+
+    border:1px solid #f2dfaa;
+
+    color:#695526;
+
+    font-size:10px;
+
+    line-height:1.6;
+}
+
+
+/* ASSINATURAS */
+
+.signatures{
+
+    margin:12px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+}
+
+.signature{
+
+    min-height:90px;
+
+    padding:12px 5px;
+
+    background:#ffffff;
+
+    border:1px solid #e1e5ea;
+
+    border-radius:12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    text-align:center;
+}
+
+.signature-line{
+
+    border-top:1px solid #555;
+
+    margin-bottom:7px;
+}
+
+.signature strong{
+
+    font-size:10px;
+}
+
+.signature span{
+
+    font-size:8px;
+
+    color:#777;
+}
+
+
+/* RODAPÉ */
+
+.footer{
+
+    padding:18px 15px 22px;
+
+    text-align:center;
+
+    color:#89919b;
+
+    font-size:8px;
+
+    line-height:1.7;
+
+    border-top:1px solid #e5e7eb;
+}
+
+.footer strong{
+
+    display:block;
+
+    color:#4f5964;
+
+    font-size:10px;
+
+    margin-bottom:2px;
+}
+
+
+/* CELULAR PEQUENO */
+
+@media(max-width:360px){
+
+    body{
+
+        padding:7px;
+    }
+
+    .header{
+
+        padding:18px 14px;
+    }
+
+    .section{
+
+        margin:9px;
+
+        padding:13px;
+    }
+
+    .signatures{
+
+        margin:9px;
+    }
+
+    .title h2{
+
+        font-size:18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<!-- CABEÇALHO -->
+
+<header class="header">
+
+    <img
+        src="logo.webp"
+        class="logo"
+        alt="Diamond Connect">
+
+    <h1>
+        Diamond <span>Connect</span>
+    </h1>
+
+    <p>
+        TECNOLOGIA • SEGURANÇA • CONFIANÇA
+    </p>
+
+</header>
+
+
+<!-- TÍTULO -->
+
+<div class="title">
+
+    <h2>
+        CONTRATO DE COMPRA E VENDA
+    </h2>
+
+    <p>
+        Documento de formalização da compra
+        e das condições acordadas entre as partes.
+    </p>
+
+</div>
+
+
+<!-- VENDEDOR -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <div class="icon">🏢</div>
+
+        DADOS DO VENDEDOR
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Empresa
+        </span>
+
+        <div class="info-value">
+            Diamond Connect
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            CNPJ
+        </span>
+
+        <div class="info-value">
+            45.145.228/0001-08
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Localização
+        </span>
+
+        <div class="info-value">
+            São Paulo - SP
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COMPRADOR -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <div class="icon">👤</div>
+
+        DADOS DO COMPRADOR
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Nome completo
+        </span>
+
+        <div class="info-value">
+            __________________________________
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            CPF
+        </span>
+
+        <div class="info-value">
+            __________________________________
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Data de nascimento
+        </span>
+
+        <div class="info-value">
+            ____ / ____ / ______
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Telefone / WhatsApp
+        </span>
+
+        <div class="info-value">
+            __________________________________
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            E-mail
+        </span>
+
+        <div class="info-value">
+            __________________________________
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUTO -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <div class="icon">📱</div>
+
+        PRODUTO DA COMPRA
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Produto / Aparelho
+        </span>
+
+        <div class="info-value">
+            __________________________________
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Capacidade / Modelo
+        </span>
+
+        <div class="info-value">
+            __________________________________
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Estado do produto
+        </span>
+
+        <div class="info-value">
+            Novo
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PAGAMENTO -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <div class="icon">💳</div>
+
+        CONDIÇÕES DE PAGAMENTO
+
+    </div>
+
+
+    <table class="table">
+
+        <tr>
+
+            <td>
+                Valor da entrada
+            </td>
+
+            <td>
+                R$ __________
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Número de parcelas
+            </td>
+
+            <td>
+                16x
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Valor de cada parcela
+            </td>
+
+            <td>
+                R$ __________
+            </td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>
+                Dia de vencimento
+            </td>
+
+            <td>
+                Dia ______
+            </td>
+
+        </tr>
+
+    </table>
+
+
+    <div class="total">
+
+        <small>
+            VALOR TOTAL DA COMPRA
+        </small>
+
+        <strong>
+            R$ __________
+        </strong>
+
+    </div>
+
+
+    <div class="installment">
+
+        <strong>
+            16 parcelas
+        </strong>
+
+        <span>
+            Conforme condições acordadas entre as partes
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- ENDEREÇO -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <div class="icon">📍</div>
+
+        ENDEREÇO DE ENTREGA
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            CEP
+        </span>
+
+        <div class="info-value">
+            ______________________________
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Endereço
+        </span>
+
+        <div class="info-value">
+            ______________________________
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Número / Complemento
+        </span>
+
+        <div class="info-value">
+            ______________________________
+        </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <span class="info-label">
+            Bairro / Cidade / Estado
+        </span>
+
+        <div class="info-value">
+            ______________________________
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TERMOS -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <div class="icon">📄</div>
+
+        TERMOS E CONDIÇÕES
+
+    </div>
+
+
+    <div class="terms" style="margin:0; padding:0; border:0;">
+
+        <p>
+            1. O presente documento formaliza a compra e venda
+            do produto descrito neste contrato entre a Diamond
+            Connect e o comprador identificado.
+        </p>
+
+        <p>
+            2. O comprador declara estar ciente das condições
+            de pagamento, valores, quantidade de parcelas e
+            respectivos vencimentos acordados.
+        </p>
+
+        <p>
+            3. O comprador declara que as informações fornecidas
+            são verdadeiras e de sua responsabilidade.
+        </p>
+
+        <p>
+            4. O produto será entregue conforme as condições
+            previamente acordadas entre as partes.
+        </p>
+
+        <p>
+            5. O presente contrato deverá ser lido e conferido
+            antes da confirmação da compra.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- AVISO -->
+
+<div class="notice">
+
+    ⚠️ <strong>Importante:</strong>
+    confira todos os seus dados, valores e condições
+    antes de assinar ou confirmar a contratação.
+
+</div>
+
+
+<!-- ASSINATURAS -->
+
+<div class="signatures">
+
+
+    <div class="signature">
+
+        <div class="signature-line"></div>
+
+        <strong>
+            Diamond Connect
+        </strong>
+
+        <span>
+            Vendedor
+        </span>
+
+    </div>
+
+
+    <div class="signature">
+
+        <div class="signature-line"></div>
+
+        <strong>
+            Comprador
+        </strong>
+
+        <span>
+            Assinatura
+        </span>
+
+    </div>
+
+
+</div>
+
+
+<!-- DATA -->
+
+<section class="section">
+
+    <div class="section-title">
+
+        <div class="icon">📅</div>
+
+        DATA DA CONTRATAÇÃO
+
+    </div>
+
+    <div class="info">
+
+        <span class="info-label">
+            Data
+        </span>
+
+        <div class="info-value">
+            ____ / ____ / ______
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RODAPÉ -->
+
+<footer class="footer">
+
+    <strong>
+        Diamond Connect
+    </strong>
+
+    Tecnologia • Segurança • Confiança
+
+    <br>
+
+    São Paulo - SP
+
+    <br>
+
+    CNPJ 45.145.228/0001-08
+
+</footer>
+
+
+</div>
+
+
+</body>
+
+  </html>
